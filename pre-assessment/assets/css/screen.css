@@ -1,0 +1,109 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+/* sets the entire document to those margin and padding parameters; it's essentially the default unless otherwise specified in the rest of the document */
+body {
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #171717;
+	font-size: 16px;
+	line-height: 1.5em;
+	background: url(/pre-assessment/assets/img/bg-tile.jpg);
+}
+.alert {
+	background:rgb(108, 188, 202);
+	color:white;
+}
+#container {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	background-color: #FFF;
+	margin-top: 20px;
+	border: 1px solid #CCC;
+}
+#content h2{
+	color:rgb(108, 188, 202);
+}
+#content h3{
+	color:rgb(156, 217, 126);
+}
+#content h4{
+	color:rgb(197, 142, 61);
+}
+#content dt{
+	color:rgb(197, 142, 61); 
+}
+figure {
+	float: right;
+	border: 3px solid black;
+	margin: 20px;
+}
+#content {
+	overflow: hidden;
+}
+.letter:hover{
+	background-color:rgb(108, 188, 202);
+}
+#header {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url(/pre-assessment/assets/img/assessment-3.jpg);
+	background-position: center;
+	height: 100px;
+}
+#header h1 a {
+}
+#nav {
+	background-color: #000;
+}
+#nav ul {
+	list-style-type: none;
+	margin-left: 10px;
+}
+#nav ul li {
+	display: inline;
+	height: 35px;
+	line-height: 35px;
+}
+#nav ul li a {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 18px;
+}
+#nav ul li a:link, #nav ul li a:visited {
+	text-decoration: none;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	color: #FFF;
+}
+#nav ul li a:hover {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+#content {
+	margin: 20px;
+}
+#content p {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+#footer {
+	background-color: #000;
+	color: #FFF;
+	height: 25px;
+}
+#footer h6 {
+	font-size: 12px;
+	line-height: 25px;
+	margin-right: 20px;
+	margin-left: 20px;
+	background: url(/pre-assessment/assets/img/bg-tile.jpg);
+}
