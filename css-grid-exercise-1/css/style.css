@@ -83,17 +83,41 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body{
-  background-image: url("/css-grid-exercise-1/img/grid.png");
-}
+
 main{
   display: grid;
-  grid-gap: 8px;
-  grid-template-columns: 110px 110px 110px;
+  grid-gap: 12px;
+  grid-template-columns: repeat(6, 1fr);
 }
 
-header{
-  grid-area: header;
+header.primary{
+  grid-column: 1/7;
+  grid-row: 1/2;
+  background-color: #698FE0;
+}
+
+#content{
+  grid-column: 1/7;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+#secondary{
+  grid-column: 4/7;
+  background-color: #364972;
+}
+
+div.primary{
+  background-color: #5574B6;
+  grid-column: 1/4;
+}
+
+footer.primary{
+  grid-column: 1/7;
+  grid-row: 3/4;
+  background-color: #658AD8;
 }
 /* ==========================================================================
    Helper classes
