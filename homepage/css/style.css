@@ -229,6 +229,25 @@ footer.primary{
   /* Style adjustments for high resolution devices */
 }
 
+/* author's media quieries */
+@media screen and (hover:hover){
+  li:hover{
+    color:#330C20;
+    background: #330C20;
+  }
+}
+
+@media screen and (max-width:620px){
+  ul{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 621px){
+  ul{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
