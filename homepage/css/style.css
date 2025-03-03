@@ -115,8 +115,10 @@ a:visited{
 }
 
 li{
-  color:#CFBAC5;
-  font-size: 1.3rem;
+  --color:#CFBAC5;
+  --font-size: 1.3rem;
+  color: var(--color);
+  font-size: var(--font-size);
 }
 
 footer.primary{
