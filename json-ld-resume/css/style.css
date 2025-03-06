@@ -83,6 +83,241 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   :root{
+    --primary-type-color: #645353;
+    --accent-color-1:  #866F6F;
+  }
+  
+  /* ------ Box Sizing -------*/
+  
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* ------ Typography -------*/
+  html{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
+  /* ------ Fluid Images -------*/
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /* ------ Utility Classes  -------*/
+  .container {
+    max-width: 420px; /* Design Time */
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.15);
+  }
+  
+  /* ------ Helper Classes -------*/
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+  }
+  
+  
+  /* ------ Global Styles -------*/
+  
+ 
+  
+  body {
+    background-color: #caa8a8;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23f5cbcb' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M41 37.59V25h-2v12.59l-8.9-8.9-1.41 1.41 8.9 8.9H25v2h12.59l-8.9 8.9 1.41 1.41 8.9-8.9V55h2V42.41l8.9 8.9 1.41-1.41-8.9-8.9H55v-2H42.41l8.9-8.9-1.41-1.41-8.9 8.9zM1 1h2v2H1V1zm0 4h2v2H1V5zm0 4h2v2H1V9zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM5 1h2v2H5V1zm4 0h2v2H9V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm0 4h2v2h-2V5zm0 4h2v2h-2V9zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zM5 5h70v70H5V5zm2 68h66V7H7v66zM9 9h62v62H9V9zm2 60h58V11H11v58zm2-39.6V13h16.4A29.1 29.1 0 0 0 13 29.4zM15 15v6.67A31.17 31.17 0 0 1 21.67 15H15zm-2 52V50.6A29.1 29.1 0 0 0 29.4 67H13zm2-8.67V65h6.67A31.17 31.17 0 0 1 15 58.33zM67 67H50.6A29.1 29.1 0 0 0 67 50.6V67zm-8.67-2H65v-6.67A31.17 31.17 0 0 1 58.33 65zM67 13v16.4A29.1 29.1 0 0 0 50.6 13H67zm-2 8.67V15h-6.67A31.17 31.17 0 0 1 65 21.67zM39 13h2v2h-2v-2zm7.02.66l1.93.52-.51 1.93-1.94-.52.52-1.93zm6.61 2.46l1.74 1-1 1.73-1.74-1 1-1.73zm5.75 4.08l1.42 1.42-1.42 1.4-1.4-1.4 1.4-1.42zm4.5 5.43l1 1.74-1.73 1-1-1.74 1.73-1zm2.94 6.42l.52 1.93-1.93.52-.52-1.94 1.93-.51zM67 39v2h-2v-2h2zm-.66 7.02l-.52 1.93-1.93-.51.52-1.94 1.93.52zm-2.46 6.61l-1 1.74-1.73-1 1-1.74 1.73 1zm-4.08 5.75l-1.42 1.42-1.4-1.42 1.4-1.4 1.42 1.4zm-5.43 4.5l-1.74 1-1-1.73 1.74-1 1 1.73zM41 67h-2v-2h2v2zm6.95-1.18l-1.93.52-.52-1.93 1.94-.52.51 1.93zm-13.97.52l-1.93-.52.51-1.93 1.94.52-.52 1.93zm-6.61-2.46l-1.74-1 1-1.73 1.74 1-1 1.73zm-5.75-4.08l-1.42-1.42 1.42-1.4 1.4 1.4-1.4 1.42zm-4.5-5.43l-1-1.74 1.73-1 1 1.74-1.73 1zm-2.94-6.42l-.52-1.93 1.93-.52.52 1.94-1.93.51zM13 41v-2h2v2h-2zm.66-7.02l.52-1.93 1.93.51-.52 1.94-1.93-.52zm2.46-6.61l1-1.74 1.73 1-1 1.74-1.73-1zm4.08-5.75l1.42-1.42 1.4 1.42-1.4 1.4-1.42-1.4zm5.43-4.5l1.74-1 1 1.73-1.74 1-1-1.73zm6.42-2.94l1.93-.52.52 1.93-1.94.52-.51-1.93zM40 63a23 23 0 1 1 0-46 23 23 0 0 1 0 46zm0-2a21 21 0 1 0 0-42 21 21 0 0 0 0 42zm0-2a19 19 0 1 1 0-38 19 19 0 0 1 0 38zm0-2a17 17 0 1 0 0-34 17 17 0 0 0 0 34z'/%3E%3C/g%3E%3C/svg%3E");
+    color: var(--primary-type-color);
+    line-height: 1.6;
+  }
+  
+  a:link,
+  a:visited {
+    color: var(--primary-type-color);
+  }
+  
+  nav {
+    padding: 1px;
+  }
+  
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px 20px 0px 20px;
+  }
+  
+  nav li {
+    list-style-type: none;
+  }
+  
+  nav a:link, nav a:visited {
+    display: block;
+    padding: 8px 16px;
+    border: 2px solid #866F6F;
+    text-align: center;
+    text-decoration: none;
+    color: #645353;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    background: #ECC4C4;
+    transition: background-color 0.5s ease;
+    color: #645353;
+    margin: 4px;
+  }
+  
+  nav a:hover {
+    background: #CAA8A8;
+  }
+  
+  main {
+    padding: 1px 20px;
+  }
+  
+  main h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+  }
+  main h1:before,
+  main h1:after {
+    background-color: var(--accent-color-1);
+    content: "\a0";
+    flex-grow: 1;
+    height: 1px;
+    position: relative;
+    top: 1.6rem;
+  }
+  main h1:before {
+    margin-right: 15px;
+  }
+  main h1:after {
+    margin-left: 15px;
+  }
+  
+  dl {
+    display: grid;
+    /*shorthand*/
+    grid-template: repeat(8, auto) / 8em 1fr;
+    font-size:.9rem;
+  }
+  
+  dt {
+    font-weight: 800;
+    color:  #F5CBCB;
+    grid-column: 1;
+    padding: 10px 0;
+    border-bottom: 2px dotted var(--accent-color-1);
+  }
+  dd {
+    margin: 0;
+    grid-column: 2;
+    padding: 10px 0;
+    border-bottom: 2px dotted var(--accent-color-1);
+  }
+  
+  .related-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap:20px;
+  }
+  
+  .related-links a {
+    border: 1px solid var(--accent-color-1);
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    background: rgba(0, 0, 0, 0.65);
+    transition: background-color 0.5s ease;
+    color: #fff;
+  }
+  
+  .related-links .svg-inline--fa {
+    font-size: 1.8em;
+    padding-top: 7px;
+  }
+  
+  .related-links a:hover {
+    background: rgba(0, 0, 0, 0.95);
+  }
+  
+  #skills {
+  }
+  #skills li {
+    list-style-type: square;
+  }
+  
+  
+  .job,
+  .certificate {
+    border-bottom: 1px solid var(--accent-color-1);
+    padding-bottom: 20px;
+  }
+  
+  .job *[itemprop="jobTitle"],
+  .job *[itemprop="name"],
+  .job *[itemprop="url"],
+  .job *[itemprop="addressLocality"],
+  .certificate *[itemprop="name"] {
+    display: block;
+  }
+  
+  .job h3 {
+    margin: 20px 0 0 0;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .page-title {
+    grid-area: title;
+  }
+  #about {
+    grid-area: about;
+  }
+  #skills {
+    grid-area: skills;
+  }
+  #experience {
+    grid-area: experience;
+  }
+  #education {
+    grid-area: education;
+  }
+  
+  main.container{
+    display:grid;
+    grid-template-areas:
+      "title"
+      "about"
+      "skills"
+      "education"
+      "experience"
+      ;
+  }
+  
 
 /* ==========================================================================
    Helper classes
