@@ -171,12 +171,13 @@ textarea {
     text-align: center;
     text-decoration: none;
     color: #645353;
-    text-transform: uppercase;
-    font-size: 0.75em;
+    font-size: 0.85em;
     background: #ECC4C4;
-    transition: background-color 0.5s ease;
+    font-weight: 500;
+    transition: background-color 0.7s ease;
     color: #645353;
     margin: 4px;
+    border-radius: 50px;
   }
   
   nav a:hover {
@@ -192,23 +193,11 @@ textarea {
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    font-weight: 400;
+    font-weight: 550;
+    margin-top: 0;
+    color: #F5CBCB;
   }
-  main h1:before,
-  main h1:after {
-    background-color: var(--accent-color-1);
-    content: "\a0";
-    flex-grow: 1;
-    height: 1px;
-    position: relative;
-    top: 1.6rem;
-  }
-  main h1:before {
-    margin-right: 15px;
-  }
-  main h1:after {
-    margin-left: 15px;
-  }
+
   
   dl {
     display: grid;
@@ -218,17 +207,15 @@ textarea {
   }
   
   dt {
-    font-weight: 800;
+    font-weight: 770;
     color:  #F5CBCB;
     grid-column: 1;
     padding: 10px 0;
-    border-bottom: 2px dotted var(--accent-color-1);
   }
   dd {
     margin: 0;
     grid-column: 2;
     padding: 10px 0;
-    border-bottom: 2px dotted var(--accent-color-1);
   }
   
   .related-links {
@@ -240,16 +227,17 @@ textarea {
   }
   
   .related-links a {
-    border: 1px solid var(--accent-color-1);
+    border: 2px solid #866F6F;
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
-    color: #222222;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    background: rgba(0, 0, 0, 0.65);
-    transition: background-color 0.5s ease;
-    color: #fff;
+    color: #645353;
+    font-size: 0.85em;
+    font-weight: 500;
+    background: #ECC4C4;
+    transition: background-color 0.7s ease;
+    color: #645353;
+    border-radius: 50px;
   }
   
   .related-links .svg-inline--fa {
@@ -258,20 +246,34 @@ textarea {
   }
   
   .related-links a:hover {
-    background: rgba(0, 0, 0, 0.95);
+    background: #caa8a8;
   }
   
-  #skills {
+  .personal{
+    display: none; 
   }
+
+  img{
+    border: 2.5px solid #866F6F;
+    border-radius: 50px;
+  }
+ 
   #skills li {
-    list-style-type: square;
+    list-style-type: circle;
   }
   
-  
+  h2{
+    color: #F5CBCB;
+  }
+
+  h3{
+    color: #ECC4C4;
+  }
+
   .job,
   .certificate {
-    border-bottom: 1px solid var(--accent-color-1);
-    padding-bottom: 20px;
+    border-bottom: 2px dotted var(--accent-color-1);
+    padding-bottom: 16px;
   }
   
   .job *[itemprop="jobTitle"],
@@ -283,7 +285,7 @@ textarea {
   }
   
   .job h3 {
-    margin: 20px 0 0 0;
+    margin: 20px 0 8px 0;
   }
   
   footer {
@@ -293,6 +295,12 @@ textarea {
   
   .page-title {
     grid-area: title;
+  }
+  #button {
+    grid-area: button;
+  }
+  #links {
+    grid-area: related-links;
   }
   #about {
     grid-area: about;
@@ -311,10 +319,12 @@ textarea {
     display:grid;
     grid-template-areas:
       "title"
+      "button"
+      "links"
       "about"
       "skills"
-      "education"
       "experience"
+      "education"
       ;
   }
   
