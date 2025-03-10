@@ -117,7 +117,6 @@ textarea {
   .container {
     max-width: 420px; /* Design Time */
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.15);
   }
   
   /* ------ Helper Classes -------*/
@@ -195,7 +194,7 @@ textarea {
     text-align: center;
     font-weight: 550;
     margin-top: 0;
-    color: #F5CBCB;
+    color: #645353;
   }
 
   
@@ -208,14 +207,20 @@ textarea {
   
   dt {
     font-weight: 770;
-    color:  #F5CBCB;
+    color:   #866F6F;
     grid-column: 1;
     padding: 10px 0;
+    background: #F5CBCB;
+    border: 2px solid var(--accent-color-1);
+    text-align: center;
   }
   dd {
     margin: 0;
     grid-column: 2;
     padding: 10px 0;
+    background: #F5CBCB;
+    border: 2px solid var(--accent-color-1);
+    text-align: center;
   }
   
   .related-links {
@@ -263,11 +268,11 @@ textarea {
   }
   
   h2{
-    color: #F5CBCB;
+    color: #645353;
   }
 
   h3{
-    color: #ECC4C4;
+    color: #866F6F;
   }
 
   .job,
