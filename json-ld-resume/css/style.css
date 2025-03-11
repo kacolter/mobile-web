@@ -301,10 +301,10 @@ textarea {
   .page-title {
     grid-area: title;
   }
-  #button {
+  nav.primary {
     grid-area: button;
   }
-  #links {
+  .related-links {
     grid-area: related-links;
   }
   #about {
@@ -325,7 +325,7 @@ textarea {
     grid-template-areas:
       "title"
       "button"
-      "links"
+      "related-links"
       "about"
       "skills"
       "experience"
@@ -333,6 +333,9 @@ textarea {
       ;
   }
   
+  /* media quieries */
+  @media screen and (min-width:768px){
+  }
 
 /* ==========================================================================
    Helper classes
