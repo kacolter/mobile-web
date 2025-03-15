@@ -103,7 +103,6 @@ textarea {
   html{
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
   }
   
@@ -301,12 +300,8 @@ textarea {
   .page-title {
     grid-area: title;
   }
-  nav.primary {
-    grid-area: button;
-  }
-  .related-links {
-    grid-area: related-links;
-  }
+ 
+
   #about {
     grid-area: about;
   }
@@ -324,8 +319,6 @@ textarea {
     display:grid;
     grid-template-areas:
       "title"
-      "button"
-      "related-links"
       "about"
       "skills"
       "experience"
@@ -335,7 +328,22 @@ textarea {
   
   /* media quieries */
   @media screen and (min-width:768px){
+    header.container{
+      max-width:900px;
+      }
+      main.container{
+      max-width:900px;
+      grid-template-columns: 36.5% auto;  
+      grid-template-areas:
+        "title title"
+        "about about"
+        "experience education"
+        "skills ."
+        ;  
+      }
   }
+
+
 
 /* ==========================================================================
    Helper classes
