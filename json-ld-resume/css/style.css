@@ -336,7 +336,7 @@ textarea {
       grid-template-columns: 36.5% auto;  
       grid-template-areas:
         "title title"
-        "about about"
+        ". about"
         "experience education"
         "skills ."
         ;  
