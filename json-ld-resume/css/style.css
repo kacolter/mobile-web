@@ -314,7 +314,7 @@ textarea {
   #education {
     grid-area: education;
   }
-  
+ 
   main.container{
     display:grid;
     grid-template-areas:
@@ -361,8 +361,12 @@ textarea {
         grid-area:related;
         padding-bottom:25px
       } 
+      
   }
 
+  #diploma{
+    border:none;
+  }
 
 
 /* ==========================================================================
