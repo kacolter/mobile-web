@@ -336,11 +336,31 @@ textarea {
       grid-template-columns: 36.5% auto;  
       grid-template-areas:
         "title title"
-        ". about"
+        "about about"
         "experience education"
         "skills ."
         ;  
       }
+    
+      #about{
+        display:grid;
+        gap:20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+          "details details bio"
+          "related related .";
+      }
+      .bio{
+        grid-area:bio;
+      }
+      .details{
+        grid-area:details;
+      }
+        
+       .related-links{
+        grid-area:related;
+        padding-bottom:25px
+      } 
   }
 
 
