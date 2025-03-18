@@ -348,7 +348,7 @@ textarea {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
           "details details bio"
-          "related related .";
+          "related related related";
       }
       .bio{
         grid-area:bio;
@@ -359,7 +359,7 @@ textarea {
         
        .related-links{
         grid-area:related;
-        padding-bottom:25px
+        padding-bottom:25px;
       } 
       
   }
