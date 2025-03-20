@@ -11,523 +11,524 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-/* text-shadow: none makes background/highlight of copy and pasted text invisible */
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-   :root{
-    --primary-type-color: #645353;
-    --accent-color-1:  #866F6F;
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
   }
   
-  /* ------ Box Sizing -------*/
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Customize the background color to match your design.
+   */
   
-  html {
-    box-sizing: border-box;
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
   }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  /* ------ Typography -------*/
-  html{
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
-  
-  /* ------ Fluid Images -------*/
-  
-  img {
-    max-width: 100%;
+  /* text-shadow: none makes background/highlight of copy and pasted text invisible */
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
   }
   
-  /* ------ Utility Classes  -------*/
-  .container {
-    max-width: 420px; /* Design Time */
-    margin: 0 auto;
-  }
+  /*
+   * A better looking default horizontal rule
+   */
   
-  /* ------ Helper Classes -------*/
-  .visuallyhidden {
+  hr {
+    display: block;
+    height: 1px;
     border: 0;
-    clip: rect(0 0 0 0);
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+     :root{
+      --primary-type-color: #645353;
+      --accent-color-1:  #866F6F;
+    }
+    
+    /* ------ Box Sizing -------*/
+    
+    html {
+      box-sizing: border-box;
+    }
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+    
+    /* ------ Typography -------*/
+    html{
+      font-family: "Quicksand", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+    
+    /* ------ Fluid Images -------*/
+    
+    img {
+      max-width: 100%;
+    }
+    
+    /* ------ Utility Classes  -------*/
+    .container {
+      max-width: 420px; /* Design Time */
+      margin: 0 auto;
+    }
+    
+    /* ------ Helper Classes -------*/
+    .visuallyhidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      white-space: nowrap; /* 1 */
+    }
+    
+    
+    /* ------ Global Styles -------*/
+    
+   
+    
+    body {
+      background-color: #caa8a8;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23f5cbcb' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M41 37.59V25h-2v12.59l-8.9-8.9-1.41 1.41 8.9 8.9H25v2h12.59l-8.9 8.9 1.41 1.41 8.9-8.9V55h2V42.41l8.9 8.9 1.41-1.41-8.9-8.9H55v-2H42.41l8.9-8.9-1.41-1.41-8.9 8.9zM1 1h2v2H1V1zm0 4h2v2H1V5zm0 4h2v2H1V9zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM5 1h2v2H5V1zm4 0h2v2H9V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm0 4h2v2h-2V5zm0 4h2v2h-2V9zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zM5 5h70v70H5V5zm2 68h66V7H7v66zM9 9h62v62H9V9zm2 60h58V11H11v58zm2-39.6V13h16.4A29.1 29.1 0 0 0 13 29.4zM15 15v6.67A31.17 31.17 0 0 1 21.67 15H15zm-2 52V50.6A29.1 29.1 0 0 0 29.4 67H13zm2-8.67V65h6.67A31.17 31.17 0 0 1 15 58.33zM67 67H50.6A29.1 29.1 0 0 0 67 50.6V67zm-8.67-2H65v-6.67A31.17 31.17 0 0 1 58.33 65zM67 13v16.4A29.1 29.1 0 0 0 50.6 13H67zm-2 8.67V15h-6.67A31.17 31.17 0 0 1 65 21.67zM39 13h2v2h-2v-2zm7.02.66l1.93.52-.51 1.93-1.94-.52.52-1.93zm6.61 2.46l1.74 1-1 1.73-1.74-1 1-1.73zm5.75 4.08l1.42 1.42-1.42 1.4-1.4-1.4 1.4-1.42zm4.5 5.43l1 1.74-1.73 1-1-1.74 1.73-1zm2.94 6.42l.52 1.93-1.93.52-.52-1.94 1.93-.51zM67 39v2h-2v-2h2zm-.66 7.02l-.52 1.93-1.93-.51.52-1.94 1.93.52zm-2.46 6.61l-1 1.74-1.73-1 1-1.74 1.73 1zm-4.08 5.75l-1.42 1.42-1.4-1.42 1.4-1.4 1.42 1.4zm-5.43 4.5l-1.74 1-1-1.73 1.74-1 1 1.73zM41 67h-2v-2h2v2zm6.95-1.18l-1.93.52-.52-1.93 1.94-.52.51 1.93zm-13.97.52l-1.93-.52.51-1.93 1.94.52-.52 1.93zm-6.61-2.46l-1.74-1 1-1.73 1.74 1-1 1.73zm-5.75-4.08l-1.42-1.42 1.42-1.4 1.4 1.4-1.4 1.42zm-4.5-5.43l-1-1.74 1.73-1 1 1.74-1.73 1zm-2.94-6.42l-.52-1.93 1.93-.52.52 1.94-1.93.51zM13 41v-2h2v2h-2zm.66-7.02l.52-1.93 1.93.51-.52 1.94-1.93-.52zm2.46-6.61l1-1.74 1.73 1-1 1.74-1.73-1zm4.08-5.75l1.42-1.42 1.4 1.42-1.4 1.4-1.42-1.4zm5.43-4.5l1.74-1 1 1.73-1.74 1-1-1.73zm6.42-2.94l1.93-.52.52 1.93-1.94.52-.51-1.93zM40 63a23 23 0 1 1 0-46 23 23 0 0 1 0 46zm0-2a21 21 0 1 0 0-42 21 21 0 0 0 0 42zm0-2a19 19 0 1 1 0-38 19 19 0 0 1 0 38zm0-2a17 17 0 1 0 0-34 17 17 0 0 0 0 34z'/%3E%3C/g%3E%3C/svg%3E");
+      color: var(--primary-type-color);
+      line-height: 1.6;
+    }
+    
+    a:link,
+    a:visited {
+      color: var(--primary-type-color);
+    }
+    
+    nav {
+      padding: 1px;
+    }
+    
+    nav ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 20px 20px 0px 20px;
+    }
+    
+    nav li {
+      list-style-type: none;
+    }
+    
+    nav a:link, nav a:visited {
+      display: block;
+      padding: 8px 16px;
+      border: 2px solid #866F6F;
+      text-align: center;
+      text-decoration: none;
+      color: #645353;
+      font-size: 0.85em;
+      background: #ECC4C4;
+      font-weight: 500;
+      transition: background-color 0.7s ease;
+      color: #645353;
+      margin: 4px;
+      border-radius: 50px;
+    }
+    
+    nav a:hover {
+      background: #CAA8A8;
+    }
+    
+    main {
+      padding: 1px 20px;
+    }
+    
+    main h1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      font-weight: 550;
+      margin-top: 0;
+      color: #645353;
+    }
+  
+    
+    dl {
+      display: grid;
+      /*shorthand*/
+      grid-template: repeat(8, auto) / 8em 1fr;
+      font-size:.9rem;
+    }
+    
+    dt {
+      font-weight: 770;
+      color:   #866F6F;
+      grid-column: 1;
+      padding: 10px 0;
+      background: #F5CBCB;
+      border: 2px solid var(--accent-color-1);
+      text-align: center;
+    }
+    dd {
+      margin: 0;
+      grid-column: 2;
+      padding: 10px 0;
+      background: #F5CBCB;
+      border: 2px solid var(--accent-color-1);
+      text-align: center;
+    }
+    
+    .related-links {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+      padding: 0;
+      gap:20px;
+    }
+    
+    .related-links a {
+      border: 2px solid #866F6F;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      color: #645353;
+      font-size: 0.85em;
+      font-weight: 500;
+      background: #ECC4C4;
+      transition: background-color 0.7s ease;
+      color: #645353;
+      border-radius: 50px;
+    }
+    
+    .related-links .svg-inline--fa {
+      font-size: 1.8em;
+      padding-top: 7px;
+    }
+    
+    .related-links a:hover {
+      background: #caa8a8;
+    }
+    
+    .personal{
+      display: none; 
+    }
+  
+    img{
+      border: 2.5px solid #866F6F;
+      border-radius: 50px;
+    }
+   
+    #skills li {
+      list-style-type: circle;
+    }
+    
+    h2{
+      color: #645353;
+    }
+  
+    h3{
+      color: #866F6F;
+    }
+  
+    .job,
+    .certificate {
+      border-bottom: 2px dotted var(--accent-color-1);
+      padding-bottom: 16px;
+    }
+    
+    .job *[itemprop="jobTitle"],
+    .job *[itemprop="name"],
+    .job *[itemprop="url"],
+    .job *[itemprop="addressLocality"],
+    .certificate *[itemprop="name"] {
+      display: block;
+    }
+    
+    .job h3 {
+      margin: 20px 0 8px 0;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 20px 0;
+    }
+    
+    .page-title {
+      grid-area: title;
+    }
+   
+  
+    #about {
+      grid-area: about;
+    }
+    #skills {
+      grid-area: skills;
+    }
+    #experience {
+      grid-area: experience;
+    }
+    #education {
+      grid-area: education;
+    }
+   
+    main.container{
+      display:grid;
+      grid-template-areas:
+        "title"
+        "about"
+        "skills"
+        "experience"
+        "education"
+        ;
+    }
+    
+    /* media quieries */
+    @media screen and (min-width:768px){
+      header.container{
+        max-width:900px;
+        }
+        main.container{
+        max-width:900px;
+        grid-template-columns: 36.5% auto;  
+        grid-template-areas:
+          "title title"
+          "about about"
+          "experience education"
+          "skills skills"
+          ;  
+        }
+      
+        #about{
+          display:grid;
+          gap:20px;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-areas:
+            "details details bio"
+            "related related .";
+        }
+        .bio{
+          grid-area:bio;
+        }
+        .details{
+          grid-area:details;
+        }
+          
+         #links{
+          grid-area:related;
+          padding-bottom:25px;
+        } 
+        
+    }
+  
+    #diploma{
+      border:none;
+    }
+  
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden,
+  [hidden] {
+    display: none !important;
+  }
+  /* important: gets rid of css specificities */
+  /*
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
+  
+  .visually-hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
     padding: 0;
     position: absolute;
+    white-space: nowrap;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    /* 1 */
   }
+  /*----visually hidden is a good class for screen readers such as creating a "jump to content" link in the nav----*/
   
-  
-  /* ------ Global Styles -------*/
-  
- 
-  
-  body {
-    background-color: #caa8a8;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23f5cbcb' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M41 37.59V25h-2v12.59l-8.9-8.9-1.41 1.41 8.9 8.9H25v2h12.59l-8.9 8.9 1.41 1.41 8.9-8.9V55h2V42.41l8.9 8.9 1.41-1.41-8.9-8.9H55v-2H42.41l8.9-8.9-1.41-1.41-8.9 8.9zM1 1h2v2H1V1zm0 4h2v2H1V5zm0 4h2v2H1V9zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM5 1h2v2H5V1zm4 0h2v2H9V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm0 4h2v2h-2V5zm0 4h2v2h-2V9zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zM5 5h70v70H5V5zm2 68h66V7H7v66zM9 9h62v62H9V9zm2 60h58V11H11v58zm2-39.6V13h16.4A29.1 29.1 0 0 0 13 29.4zM15 15v6.67A31.17 31.17 0 0 1 21.67 15H15zm-2 52V50.6A29.1 29.1 0 0 0 29.4 67H13zm2-8.67V65h6.67A31.17 31.17 0 0 1 15 58.33zM67 67H50.6A29.1 29.1 0 0 0 67 50.6V67zm-8.67-2H65v-6.67A31.17 31.17 0 0 1 58.33 65zM67 13v16.4A29.1 29.1 0 0 0 50.6 13H67zm-2 8.67V15h-6.67A31.17 31.17 0 0 1 65 21.67zM39 13h2v2h-2v-2zm7.02.66l1.93.52-.51 1.93-1.94-.52.52-1.93zm6.61 2.46l1.74 1-1 1.73-1.74-1 1-1.73zm5.75 4.08l1.42 1.42-1.42 1.4-1.4-1.4 1.4-1.42zm4.5 5.43l1 1.74-1.73 1-1-1.74 1.73-1zm2.94 6.42l.52 1.93-1.93.52-.52-1.94 1.93-.51zM67 39v2h-2v-2h2zm-.66 7.02l-.52 1.93-1.93-.51.52-1.94 1.93.52zm-2.46 6.61l-1 1.74-1.73-1 1-1.74 1.73 1zm-4.08 5.75l-1.42 1.42-1.4-1.42 1.4-1.4 1.42 1.4zm-5.43 4.5l-1.74 1-1-1.73 1.74-1 1 1.73zM41 67h-2v-2h2v2zm6.95-1.18l-1.93.52-.52-1.93 1.94-.52.51 1.93zm-13.97.52l-1.93-.52.51-1.93 1.94.52-.52 1.93zm-6.61-2.46l-1.74-1 1-1.73 1.74 1-1 1.73zm-5.75-4.08l-1.42-1.42 1.42-1.4 1.4 1.4-1.4 1.42zm-4.5-5.43l-1-1.74 1.73-1 1 1.74-1.73 1zm-2.94-6.42l-.52-1.93 1.93-.52.52 1.94-1.93.51zM13 41v-2h2v2h-2zm.66-7.02l.52-1.93 1.93.51-.52 1.94-1.93-.52zm2.46-6.61l1-1.74 1.73 1-1 1.74-1.73-1zm4.08-5.75l1.42-1.42 1.4 1.42-1.4 1.4-1.42-1.4zm5.43-4.5l1.74-1 1 1.73-1.74 1-1-1.73zm6.42-2.94l1.93-.52.52 1.93-1.94.52-.51-1.93zM40 63a23 23 0 1 1 0-46 23 23 0 0 1 0 46zm0-2a21 21 0 1 0 0-42 21 21 0 0 0 0 42zm0-2a19 19 0 1 1 0-38 19 19 0 0 1 0 38zm0-2a17 17 0 1 0 0-34 17 17 0 0 0 0 34z'/%3E%3C/g%3E%3C/svg%3E");
-    color: var(--primary-type-color);
-    line-height: 1.6;
-  }
-  
-  a:link,
-  a:visited {
-    color: var(--primary-type-color);
-  }
-  
-  nav {
-    padding: 1px;
-  }
-  
-  nav ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 20px 20px 0px 20px;
-  }
-  
-  nav li {
-    list-style-type: none;
-  }
-  
-  nav a:link, nav a:visited {
-    display: block;
-    padding: 8px 16px;
-    border: 2px solid #866F6F;
-    text-align: center;
-    text-decoration: none;
-    color: #645353;
-    font-size: 0.85em;
-    background: #ECC4C4;
-    font-weight: 500;
-    transition: background-color 0.7s ease;
-    color: #645353;
-    margin: 4px;
-    border-radius: 50px;
-  }
-  
-  nav a:hover {
-    background: #CAA8A8;
-  }
-  
-  main {
-    padding: 1px 20px;
-  }
-  
-  main h1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    font-weight: 550;
-    margin-top: 0;
-    color: #645353;
-  }
-
-  
-  dl {
-    display: grid;
-    /*shorthand*/
-    grid-template: repeat(8, auto) / 8em 1fr;
-    font-size:.9rem;
-  }
-  
-  dt {
-    font-weight: 770;
-    color:   #866F6F;
-    grid-column: 1;
-    padding: 10px 0;
-    background: #F5CBCB;
-    border: 2px solid var(--accent-color-1);
-    text-align: center;
-  }
-  dd {
-    margin: 0;
-    grid-column: 2;
-    padding: 10px 0;
-    background: #F5CBCB;
-    border: 2px solid var(--accent-color-1);
-    text-align: center;
-  }
-  
-  .related-links {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    gap:20px;
-  }
-  
-  .related-links a {
-    border: 2px solid #866F6F;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    color: #645353;
-    font-size: 0.85em;
-    font-weight: 500;
-    background: #ECC4C4;
-    transition: background-color 0.7s ease;
-    color: #645353;
-    border-radius: 50px;
-  }
-  
-  .related-links .svg-inline--fa {
-    font-size: 1.8em;
-    padding-top: 7px;
-  }
-  
-  .related-links a:hover {
-    background: #caa8a8;
-  }
-  
-  .personal{
-    display: none; 
-  }
-
-  img{
-    border: 2.5px solid #866F6F;
-    border-radius: 50px;
-  }
- 
-  #skills li {
-    list-style-type: circle;
-  }
-  
-  h2{
-    color: #645353;
-  }
-
-  h3{
-    color: #866F6F;
-  }
-
-  .job,
-  .certificate {
-    border-bottom: 2px dotted var(--accent-color-1);
-    padding-bottom: 16px;
-  }
-  
-  .job *[itemprop="jobTitle"],
-  .job *[itemprop="name"],
-  .job *[itemprop="url"],
-  .job *[itemprop="addressLocality"],
-  .certificate *[itemprop="name"] {
-    display: block;
-  }
-  
-  .job h3 {
-    margin: 20px 0 8px 0;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .page-title {
-    grid-area: title;
-  }
- 
-
-  #about {
-    grid-area: about;
-  }
-  #skills {
-    grid-area: skills;
-  }
-  #experience {
-    grid-area: experience;
-  }
-  #education {
-    grid-area: education;
-  }
- 
-  main.container{
-    display:grid;
-    grid-template-areas:
-      "title"
-      "about"
-      "skills"
-      "experience"
-      "education"
-      ;
-  }
-  
-  /* media quieries */
-  @media screen and (min-width:768px){
-    header.container{
-      max-width:900px;
-      }
-      main.container{
-      max-width:900px;
-      grid-template-columns: 36.5% auto;  
-      grid-template-areas:
-        "title title"
-        "about about"
-        "experience education"
-        "skills ."
-        ;  
-      }
-    
-      #about{
-        display:grid;
-        gap:20px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-          "details details bio"
-          "related related related";
-      }
-      .bio{
-        grid-area:bio;
-      }
-      .details{
-        grid-area:details;
-      }
-        
-       .related-links{
-        grid-area:related;
-        padding-bottom:25px;
-      } 
-      
-  }
-
-  #diploma{
-    border:none;
-  }
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-/* important: gets rid of css specificities */
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-/*----visually hidden is a good class for screen readers such as creating a "jump to content" link in the nav----*/
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
+   * Extends the .visually-hidden class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
+  
+  .visually-hidden.focusable:active,
+  .visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * The use of `table` rather than `block` is only necessary if using
+   * `::before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
     content: "";
+    display: table;
   }
-
-  pre {
-    white-space: pre-wrap !important;
+  
+  .clearfix::after {
+    clear: both;
   }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
   }
-
-  tr,
-  img {
-    page-break-inside: avoid;
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
   }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
   }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
+  
+  
