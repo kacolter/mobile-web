@@ -550,6 +550,12 @@ table{
   }
 }
 
+@media screen and (min-width: 1124px){
+  #members h2{
+    margin-left: 5px;
+  }
+}
+
 /* DISCOGRAPHY MEDIA QUIERIES */
 @media screen and (min-width:768px){
   #discography main.container{
@@ -662,6 +668,19 @@ table{
   }
   #discography #overview3{
     margin-top: 130px;
+  }
+}
+
+@media screen and (min-width: 1124px){
+  #discography h2{
+    margin-left:5px;
+  }
+}
+
+/* IMAGE MEDIA QUEIRY */
+@media screen and (min-width:768px){
+  body{
+    background-image: url(...img/)
   }
 }
 /* ==========================================================================
