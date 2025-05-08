@@ -118,7 +118,9 @@ img{
   max-width: 100%;
   height: auto;
   }
-
+body{
+  background-image: url(/final/img/small.jpg);
+}
 h1{
   color: var(--heading-type-color);
   font-size: 2em;
@@ -680,7 +682,7 @@ table{
 /* IMAGE MEDIA QUEIRY */
 @media screen and (min-width:768px){
   body{
-    background-image: url(...img/)
+    background-image: url(/final/img/large.jpg);
   }
 }
 /* ==========================================================================
