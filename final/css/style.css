@@ -150,8 +150,9 @@ footer a:hover{
 
 /*---------- HOME PAGE ---------- */
 
-.heading1{
+.heading1 h1{
   text-align: center;
+  border-bottom: 2px solid var(--accent-color-1);
 }
 
 #overview.container{
