@@ -87,7 +87,7 @@ body{
     
   nav ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 10px 20px 5px 20px;
     }
   .home{
@@ -149,7 +149,9 @@ footer a:hover{
 }
 
 /*---------- HOME PAGE ---------- */
-
+#home{
+  text-align: center;
+}
 .heading1 h1{
   text-align: center;
   border-bottom: 2px solid var(--accent-color-1);
@@ -387,9 +389,6 @@ table{
 
 /*-----HOME PAGE MEDIA QUIERIES----*/
 @media screen and (min-width: 768px){
-  #home header.primary{
-    max-width: 900px;
-  }
   #home main.container{
     max-width: 900px;
     grid-template-areas:
@@ -426,7 +425,7 @@ table{
     grid-area: dates;
   }
   #home main.container{
-    margin: 25px;
+    margin: 0 auto;
   }
   .summary{
     margin: 25px;
@@ -441,12 +440,13 @@ table{
   #overview.container{
   padding-bottom: 100px;
   }
+  #home .heading1{
+    margin-left: 10px;
+  }
 }
 
 @media screen and (min-width: 992px){
-  #home header.primary{
-    max-width: 1124px;
-  }
+ 
   #home main.container{
     max-width: 1124px;
   }
@@ -456,9 +456,6 @@ table{
 }
 /*----MEMBERS MEDIA QUIERIES----*/
 @media screen and (min-width: 768px){
-  #members header.primary{
-    max-width: 900px;
-  }
   #members main.container{
     max-width: 900px;
     grid-template-areas:
@@ -545,9 +542,6 @@ table{
 }
 
 @media screen and (min-width:992px){
-  #members header.primary{
-    max-width: 1124px;
-  }
   #members main.container{
     max-width: 1124px;
   }
@@ -558,9 +552,6 @@ table{
 
 /* DISCOGRAPHY MEDIA QUIERIES */
 @media screen and (min-width:768px){
-  #discography header.primary{
-    max-width: 900px;
-  }
   #discography main.container{
     max-width: 900px;
     grid-template-areas:
@@ -660,9 +651,6 @@ table{
 }
 
 @media screen and (min-width:992px){
-  #discography header.primary{
-    max-width: 1124px;
-  }
   #discography main.container{
     max-width: 1124px;
   }
