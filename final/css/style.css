@@ -53,14 +53,628 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+========================================================================== */
+:root{
+  --primary-type-color: #988977;
+  --secondary-type-color: #1C2624;
+  --heading-type-color: #8C6535;
+  --accent-color-1:  #8C6535;
+}
 
-  html {
+
+html {
     font-family: "Fondamento", cursive;
     font-weight: 400;
     font-style: normal;
+    height: 100%;
   }
 
+*{
+  box-sizing: border-box;
+}
+
+body{
+  color: var(--primary-type-color);
+  background: #1C2624;
+  height: 100%;
+  margin: 0;
+}
+  nav {
+    padding: 1px;
+    background: var(--heading-type-color);
+    border-bottom: 2px solid var(--primary-type-color);    
+    }
+    
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px 20px 5px 20px;
+    }
+  .home{
+    border: none;
+  }
+  nav li {
+    list-style-type: none;
+    border-left: 2px solid var(--primary-type-color);
+    }
+  
+nav a:link, nav a:visited{
+  text-decoration: none;
+  display: block;
+  padding: 6px 10px;
+  color: var(--secondary-type-color);
+  text-align: center;
+  font-size: .9em;
+  font-weight: 600;
+}
+
+nav a:hover{
+ color: var(--primary-type-color);
+ transition: color 0.7s ease;
+}
+
+img{
+  border: 2.5px solid var(--heading-type-color);
+  max-width: 100%;
+  height: auto;
+  }
+
+h1{
+  color: var(--heading-type-color);
+  font-size: 2em;
+}
+
+h2{
+  color: var(--heading-type-color);
+}
+
+
+
+footer{
+  text-align: center;
+  background: var(--accent-color-1);
+  border-top: 2px solid var(--primary-type-color);
+  color: var(--secondary-type-color);
+  padding: 10px 20px 5px 20px;
+}
+
+footer a:link, footer a:visited{
+  text-decoration: none;
+  color: var(--secondary-type-color);
+}
+
+footer a:hover{
+   color: var(--primary-type-color);
+   transition: color 0.7s ease;
+}
+
+/*---------- HOME PAGE ---------- */
+
+.heading1{
+  text-align: center;
+}
+
+#overview.container{
+  text-align: center;
+  border-bottom: 2px solid var(--primary-type-color); 
+  padding-bottom: 50px;
+}
+
+#tour.container{
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+td{
+  border: 2px solid var(--accent-color-1);
+  padding: 8px;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 25px auto;
+}
+.heading1{
+  grid-area: heading;
+}
+
+#overview{
+  grid-area: overview;
+}
+
+#tour{
+  grid-area: tour;
+}
+
+#home main.container{
+  display: grid;
+  grid-template-areas:
+    "heading"
+    "overview"
+    "tour"
+    ;
+}
+/*-----DISCOGRAPHY----*/
+
+#key1, #key2, #key3{
+  background: var(--accent-color-1);
+  border: 2px solid var(--primary-type-color);
+  color: var(--secondary-type-color);
+  display: block;
+  margin: 20px;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+#song1, #song2, #song3{
+  background: var(--accent-color-1);
+  border: 2px solid var(--primary-type-color);
+  color: var(--secondary-type-color);
+  display: block;
+  margin: 20px;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+#track1, #track2, #track3{
+  background: var(--accent-color-1);
+  border: 2px solid var(--primary-type-color);
+  color: var(--secondary-type-color);
+  display: block;
+  margin: 20px;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+#key1:hover{
+  box-shadow: 5px 5px 5px var( --primary-type-color);
+  transition: box-shadow 0.7s ease;
+}
+#song1:hover{
+  box-shadow: 5px 5px 5px var( --primary-type-color);
+  transition: box-shadow 0.7s ease;
+}
+#track1:hover{
+  box-shadow: 5px 5px 5px var( --primary-type-color);
+  transition: box-shadow 0.7s ease;
+}
+#key2:hover{
+  box-shadow: 5px 5px 5px var( --primary-type-color);
+  transition: box-shadow 0.7s ease;
+}
+#song2:hover{
+  box-shadow: 5px 5px 5px var( --primary-type-color);
+  transition: box-shadow 0.7s ease;
+}
+#track2:hover{
+  box-shadow: 5px 5px 5px var( --primary-type-color);
+  transition: box-shadow 0.7s ease;
+}
+#key3:hover{
+  box-shadow: 5px 5px 5px var( --primary-type-color);
+  transition: box-shadow 0.7s ease;
+}
+#song3:hover{
+  box-shadow: 5px 5px 5px var( --primary-type-color);
+  transition: box-shadow 0.7s ease;
+}
+#track3:hover{
+  box-shadow: 5px 5px 5px var( --primary-type-color);
+  transition: box-shadow 0.7s ease;
+}
+#discography p{
+  margin: 20px;
+}
+
+#discography img{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#discography h1{
+  border-bottom: 2px solid var(  --accent-color-1);
+}
+
+#discography h2{
+ font-size: 1.7em;
+  margin-bottom: 10px;
+}
+
+#discography h3{
+  font-weight: 600;
+}
+
+#discography #heading{
+  grid-area: heading;
+}
+
+#gish{
+  grid-area: gish;
+}
+
+#siamese{
+  grid-area: siamease;
+}
+
+#mellon{
+  grid-area: mellon;
+}
+
+#discography{
+  text-align: center;
+}
+
+#discography main.container{
+  display:grid;
+  grid-template-areas:
+    "heading"
+    "gish"
+    "siamese"
+    "mellon"
+    ;
+}
+/*----Members----*/
+#members dt{
+  border-bottom: 3px solid var(--accent-color-1);
+  font-size: 1.2rem;
+  margin: 25px 0 10px 0;
+}
+
+#members h1{
+  text-align: center;
+  border-bottom: 2px solid var(  --accent-color-1);
+}
+
+
+#heading1, #heading2, #heading3, #heading4{
+  text-align: center;
+}
+
+#members img{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#members dl{
+  margin: 20px;
+}
+
+#members #title{
+  grid-area: heading;
+}
+
+#billy{
+  grid-area: billy;
+}
+
+#james{
+  grid-area: james;
+}
+
+#darcy{
+  grid-area: darcy;
+}
+
+#jimmy{
+  grid-area: jimmy;
+}
+
+#members main.container{
+  display: grid;
+  grid-template-areas:
+    "heading"
+    "billy"
+    "james"
+    "darcy"
+    "jimmy"
+    ;
+}
+/* Utility */
+#members main.container {
+    max-width: 420px;
+    margin: 0 auto;
+    }
+#discography main.container{
+  max-width: 420px;
+  margin: 0 auto;
+}
+#home main.container{
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/*-----HOME PAGE MEDIA QUIERIES----*/
+@media screen and (min-width: 768px){
+  #home header.primary{
+    max-width: 900px;
+  }
+  #home main.container{
+    max-width: 900px;
+    grid-template-areas:
+      "heading heading"
+      "overview overview"
+      "tour tour"
+      ;
+  }
+  #home #overview{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "heading1 heading1 summary summary"
+      ;
+  }
+  #tour{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "heading2 heading2 heading2"
+      "dates dates dates"
+      ;
+  }
+  .heading1{
+    grid-area: heading1;
+  }
+  #heading2{
+    grid-area: heading2;
+  }
+  .summary{
+    grid-area: summary;
+  }
+  #dates{
+    grid-area: dates;
+  }
+  #home main.container{
+    margin: 25px;
+  }
+  .summary{
+    margin: 25px;
+    margin-top: 100px;
+  }
+  #home table{
+    margin-top: 10px;
+  }
+  #home #heading2{
+    margin-top: 5px;
+  }
+  #overview.container{
+  padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 992px){
+  #home header.primary{
+    max-width: 1124px;
+  }
+  #home main.container{
+    max-width: 1124px;
+  }
+  #home article.summary{
+    margin-top: 140px;
+  }
+}
+/*----MEMBERS MEDIA QUIERIES----*/
+@media screen and (min-width: 768px){
+  #members header.primary{
+    max-width: 900px;
+  }
+  #members main.container{
+    max-width: 900px;
+    grid-template-areas:
+      "heading heading"
+      "billy billy"
+      "james james"
+      "darcy darcy"
+      "jimmy jimmy"
+      ;
+  }
+  
+  #billy{
+    display:grid;
+    gap:20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+      "heading1 details1 details1"
+      ;
+  }
+  #heading1{
+    grid-area: heading1;
+  }
+  #heading2{
+    grid-area: heading2;
+  }
+  #heading3{
+    grid-area: heading3;
+  }
+  #heading4{
+    grid-area: heading4;
+  }
+  #details1{
+    grid-area: details1;
+  }
+  #details2{
+    grid-area: details2;
+  }
+  #details3{
+    grid-area: details3;
+  }
+  #details4{
+    grid-area: details4;
+  }
+  #james{
+    display:grid;
+    gap:20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+      "heading2 details2 details2"
+      ;
+  }
+  #darcy{
+    display:grid;
+    gap:20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "heading3 details3 details3"
+      ;
+  }
+  #jimmy{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "heading4 details4 details4"
+      ;
+  }
+  #members h2{
+    margin-left: 40px;
+  }
+
+  #members #details1{
+    margin-top: 45px;
+  }
+  #members #details2{
+    margin-top: 45px;
+  }
+  #members #details3{
+    margin-top: 45px;
+  }
+  #members #details4{
+    margin-top: 45px;
+  }
+}
+
+@media screen and (min-width:992px){
+  #members header.primary{
+    max-width: 1124px;
+  }
+  #members main.container{
+    max-width: 1124px;
+  }
+  #jimmy{
+    margin-bottom: 50px;
+  }
+}
+
+/* DISCOGRAPHY MEDIA QUIERIES */
+@media screen and (min-width:768px){
+  #discography header.primary{
+    max-width: 900px;
+  }
+  #discography main.container{
+    max-width: 900px;
+    grid-template-areas:
+      "heading heading"
+      "gish gish"
+      "siamese siamese"
+      "mellon mellon"
+      ;
+  }
+  #gish{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "heading1 overview1 overview1"
+      "key1 key2 key3"
+      ;
+  }
+  #siamese{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "heading2 overview2 overview2"
+      "song1 song2 song3"
+      ;
+  }
+  #mellon{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "heading3 overview3 overview3"
+      "track1 track2 track3"
+      ;
+  }
+  #heading1{
+    grid-area: heading1;
+  }
+  #heading2{
+    grid-area: heading2;
+  }
+  #heading3{
+    grid-area: heading3;
+  }
+  #overview1{
+    grid-area: overview1;
+  }
+  #overview2{
+    grid-area: overview2;
+  }
+  #overview3{
+    grid-area: overview3;
+  }
+  #key1{
+    grid-area: key1;
+  }
+  #key2{
+    grid-area: key2;
+  }
+  #key3{
+    grid-area: key3;
+  }
+  #song1{
+    grid-area: song1;
+  }
+  #song2{
+    grid-area: song2;
+  }
+  #song3{
+    grid-area: song3;
+  }
+  #track1{
+    grid-area: track1;
+  }
+  #track2{
+    grid-area: track2;
+  }
+  #track3{
+    grid-area: track3;
+  }
+  #discography h2{
+    margin-left: 40px;
+  }
+  #discography #overview1{
+    margin-top: 50px;
+  }
+  #discography #overview2{
+    margin-top: 50px;
+  }
+  #discography #overview3{
+    margin-top: 90px;
+  }
+  #mellon{
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width:992px){
+  #discography header.primary{
+    max-width: 1124px;
+  }
+  #discography main.container{
+    max-width: 1124px;
+  }
+  #discography #overview1{
+    margin-top: 80px;
+  }
+  #discography #overview2{
+    margin-top: 80px;
+  }
+  #discography #overview3{
+    margin-top: 130px;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -197,4 +811,6 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+
 
