@@ -176,7 +176,7 @@ footer a:hover{
   text-align: center;
   margin-top: 50px;
 }
-#home body{
+#home main.container{
   max-width: 420px;
 }
 
