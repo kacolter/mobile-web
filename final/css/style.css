@@ -126,14 +126,12 @@ h1{
   font-size: 2em;
 }
 
-#discography h1, h2{
+#discography h2{
   color: var(--heading-type-color);
-  background: var(--secondary-type-color);
-
+ 
 }
 #members h2{
   color: var(--heading-type-color);
-  background: var(--secondary-type-color);
 
 }
 
@@ -173,10 +171,14 @@ footer a:hover{
   margin-top: 32px;
 }
 
+#home #heading2 h2{
+  background: none;
+}
 #overview.container{
   text-align: center;
   border-bottom: 2px solid var(--primary-type-color); 
   padding-bottom: 50px;
+  margin: 20px;
 }
 
 #tour.container{
