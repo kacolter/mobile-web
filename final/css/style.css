@@ -167,17 +167,15 @@ footer a:hover{
   text-align: center;
   border-bottom: 2px solid var(--primary-type-color); 
   padding-bottom: 50px;
-  margin: 20px;
+  margin: 25px auto;
 }
 
 #tour.container{
   text-align: center;
-  margin: 50px 20px 20px 20px;
+  margin-top: 50px;
 }
 
-#home nav, footer{
-  margin: 0;
-}
+
 td{
   border: 2px solid var(--accent-color-1);
   padding: 8px;
