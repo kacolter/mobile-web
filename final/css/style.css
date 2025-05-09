@@ -711,7 +711,7 @@ table{
 /* IMAGE MEDIA QUEIRY */
 @media screen and (min-width:768px){
   body{
-    background-image: url(../img/large.jpg);
+    background-image: url("../img/large.jpg");
   }
 }
 /* ==========================================================================
