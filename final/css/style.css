@@ -154,13 +154,16 @@ footer a:hover{
 #home{
   text-align: center;
 }
+#home main.container{
+  margin: 25px auto;
+}
 #home p{
   background: var(--secondary-type-color);
 }
 .heading1 h1{
   text-align: center;
   border-bottom: 2px solid var(--accent-color-1);
-  margin: 20px;
+  margin-top: 32px;
 }
 
 #overview.container{
