@@ -353,6 +353,9 @@ table{
 
 #members dl{
   margin: 20px;
+  background: var(--secondary-type-color);
+  border: var(--secondary-type-color);
+  border-radius: 10px;
 }
 
 #members #title{
