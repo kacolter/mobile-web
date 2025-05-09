@@ -153,6 +153,7 @@ footer a:hover{
 /*---------- HOME PAGE ---------- */
 #home{
   text-align: center;
+  margin: 20px;
 }
 #home p{
   background: var(--secondary-type-color);
