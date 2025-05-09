@@ -119,7 +119,7 @@ img{
   height: auto;
   }
 body{
-  background-image: url(../img/small.jpg);
+  background-image: url("../img/small.jpg");
 }
 h1{
   color: var(--heading-type-color);
@@ -176,7 +176,9 @@ footer a:hover{
   text-align: center;
   margin-top: 50px;
 }
-
+#home body{
+  margin: 25px;
+}
 
 td{
   border: 2px solid var(--accent-color-1);
