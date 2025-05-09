@@ -153,7 +153,6 @@ footer a:hover{
 /*---------- HOME PAGE ---------- */
 #home{
   text-align: center;
-  margin: 20px;
 }
 #home p{
   background: var(--secondary-type-color);
@@ -161,17 +160,19 @@ footer a:hover{
 .heading1 h1{
   text-align: center;
   border-bottom: 2px solid var(--accent-color-1);
+  margin: 20px;
 }
 
 #overview.container{
   text-align: center;
   border-bottom: 2px solid var(--primary-type-color); 
   padding-bottom: 50px;
+  margin: 20px;
 }
 
 #tour.container{
   text-align: center;
-  margin-top: 50px;
+  margin: 50px 20px 20px 20px;
 }
 
 
