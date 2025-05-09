@@ -175,7 +175,9 @@ footer a:hover{
   margin: 50px 20px 20px 20px;
 }
 
-
+#home nav, footer{
+  margin: 0;
+}
 td{
   border: 2px solid var(--accent-color-1);
   padding: 8px;
