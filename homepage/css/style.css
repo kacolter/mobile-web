@@ -219,10 +219,25 @@ footer.primary{
    Modify as content requires.
    ========================================================================== */
 
+#header{
+  grid-area: heading;
+}
+#links{
+  grid-area: links;
+}
+
+main.container{
+  max-width: 420px;
+}
+
 main.container{
   display:grid;
-  grid-template-columns: repeat(4, 1fr);
+ /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-areas:
+  "heading"
+  "links"
 }
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
@@ -235,6 +250,7 @@ main.container{
 }
 
 /* author's media quieries */
+/* 
 @media screen and (hover:hover){
   li:hover{
     color:#330C20;
@@ -254,6 +270,9 @@ main.container{
     grid-template-columns: repeat(3, 1fr);
   }
 }
+  */
+
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
