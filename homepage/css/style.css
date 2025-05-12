@@ -83,6 +83,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+:root{
+  --link-type-color: #CFBAC5;
+  --footer-type-color: #A5798F;
+  --heading-type-color: #FAB6D8;
+  --footer-background-color:  #330C20;
+  --footer-accent-color: #7A4660;
+}
    
    body{
     background-color: #502038;
@@ -93,10 +100,10 @@ textarea {
 }
 
 h1{
-    color: #FAB6D8;
+    color: var(--heading-type-color);
     font-size: 2.0rem;
     text-align: center;
-    border-bottom: 3px solid #FAB6D8;
+    border-bottom: 3px solid var(--heading-type-color);
     padding: 8.5px 0 5.5px 9px;
     margin-top: 50px;
 }
@@ -106,34 +113,30 @@ h1{
 }
 
 a:link{
-  color: #CFBAC5;
+  color: var(--link-type-color);
   text-decoration: none;
 }
 
 a:visited{
-  color:#CFBAC5;
+  color: var(--link-type-color);
 }
 
 li{
-  --color:#CFBAC5;
   --font-size: 1.3rem;
-  color: var(--color);
+  color: var(--link-type-color);
   font-size: var(--font-size);
 }
-
+body{
+  margin: 0;
+}
 footer.primary{
-  background: #330C20;
-  height: 100px;
-  width:100%;
-  padding: 10px;
+  background: var(--footer-background-color);
+  padding: 25px;
   text-align: center;
   font-size: 1.5rem;
   justify-content: center;
-  border-top:3px solid #7A4660;
-  color: #A5798F;
-  position: absolute; 
-  bottom: 0;
-  left:0;
+  border-top:3px solid var( --footer-accent-color);
+  color: var(--footer-type-color);
 }
 /* ==========================================================================
    Helper classes
@@ -232,7 +235,6 @@ main.container{
 
 main.container{
   display:grid;
- /* grid-template-columns: repeat(4, 1fr); */
   grid-template-areas:
   "heading"
   "links"
@@ -250,27 +252,38 @@ main.container{
 }
 
 /* author's media quieries */
-/* 
+@media screen and (min-width: 768px){
+  main.container{
+    max-width: 900px;
+    grid-template-areas: 
+      "heading heading"
+      "links links"
+  }
+  #header{
+    grid-area: heading;
+  }
+  #links{
+    grid-area: links;
+  }
+}
+
+@media screen and (min-width: 992px){
+  main.container{
+    max-width: 1124px;
+    margin: 0 auto;
+  }
+  #header{
+    text-align: center;
+  }
+}
+
 @media screen and (hover:hover){
   li:hover{
-    color:#330C20;
     background: #330C20;
-    width: 175px;
+    width: 100%;
   }
 }
 
-@media screen and (max-width:620px){
-  ul{
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (min-width: 621px){
-  ul{
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-  */
 
 
 /* ==========================================================================
